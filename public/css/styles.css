@@ -1,0 +1,30 @@
+header.site-header{
+    position:fixed;left:0;right:0;top:0;z-index:332;-webkit-transition:0.4s;transition:0.4s
+}
+header.site-header:not(.home){
+    position:sticky;background:var(--bg);border-bottom:1px solid var(--border)
+}
+header.site-header.scroll{
+    background:var(--bg);border-color:transparent;-webkit-box-shadow:var(--shadow-s);box-shadow:var(--shadow-s)
+}
+header.site-header .header-content{
+    height:var(--header);display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center
+}
+header.site-header .header-content nav{
+    margin:0 auto 0 4rem
+}
+header.site-header .header-content nav ul{
+    display:-webkit-box;display:-ms-flexbox;display:flex
+}
+header.site-header .header-content nav ul li:not(:last-child){
+    margin-right:1rem
+}
+header.site-header .header-content nav ul li a{
+    padding:0.6em 1em;border-radius:2em;color:var(--text)
+}
+header.site-header .header-content nav ul li a:hover{
+    background:var(--opacity);color:var(--theme)
+}
+header.site-header .header-content nav ul li.current-menu-item a{
+    background:var(--opacity);color:var(--theme)
+}
